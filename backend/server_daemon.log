@@ -1,0 +1,907 @@
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:38: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Started server process [37307]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+Starting FastAPI server on port 5001...
+Database table initialization on startup...
+Materials, notifications, and folders table structures verified and migrated.
+INFO:     127.0.0.1:54849 - "GET /?refresh=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54849 - "GET /frontend/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54849 - "GET /frontend/app.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54859 - "GET /?refresh=201 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54859 - "GET /frontend/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54859 - "GET /frontend/app.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54859 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54861 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54861 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54861 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:242: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)
+INFO:     127.0.0.1:54868 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54868 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54880 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54880 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54880 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54886 - "GET /uploads/d4be99364bf23c38.pdf HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54887 - "GET /uploads/1cd39f421386c48d.pdf HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54894 - "GET /uploads/7065a9fcbdf86465.pdf HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54891 - "GET /uploads/acf4d1ea85b422c7.pdf HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54895 - "GET /uploads/f7ebcd53f9c0921a.pdf HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54887 - "GET /uploads/f97b2129cf43daa9.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54889 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54934 - "POST /api/materials/40/vote HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54934 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54934 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54934 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54934 - "GET /uploads/d4be99364bf23c38.pdf HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54952 - "GET /uploads/1cd39f421386c48d.pdf HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54958 - "GET /uploads/7065a9fcbdf86465.pdf HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54957 - "GET /uploads/d4be99364bf23c38.pdf HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54954 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54962 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54963 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54968 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54970 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54970 - "GET /frontend/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54970 - "GET /frontend/app.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54970 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54973 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54973 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54973 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55007 - "GET /logout HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55009 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55009 - "GET /frontend/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55009 - "GET /frontend/app.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55009 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55011 - "GET /api/folders?org_id=Ferty%20Base HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55011 - "GET /api/materials?org_id=Ferty%20Base HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55011 - "GET /api/notifications?org_id=Ferty%20Base HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55019 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55019 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55019 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55026 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55027 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55058 - "PUT /api/admin/users/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55058 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55063 - "GET /uploads/1cd39f421386c48d.pdf HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55068 - "GET /uploads/d4be99364bf23c38.pdf HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55069 - "GET /uploads/7065a9fcbdf86465.pdf HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55071 - "GET /uploads/f97b2129cf43daa9.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55065 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55079 - "GET /logout HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55080 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55080 - "GET /frontend/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55080 - "GET /frontend/app.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55080 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55083 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55083 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55083 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55215 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:55217 - "HEAD /frontend/app.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55219 - "HEAD /frontend/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55221 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55254 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55254 - "GET /frontend/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55254 - "GET /frontend/app.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55255 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55255 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55261 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55261 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55261 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55266 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55266 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55266 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55266 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55274 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55274 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55274 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55274 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56184 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56184 - "GET /frontend/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56184 - "GET /frontend/app.js HTTP/1.1" 200 OK
+JWT Expired Signature Error: Signature has expired
+INFO:     127.0.0.1:56184 - "GET /api/roles HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:56205 - "GET / HTTP/1.1" 200 OK
+JWT Expired Signature Error: Signature has expired
+INFO:     127.0.0.1:56205 - "GET /api/roles HTTP/1.1" 401 Unauthorized
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [37307]
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:38: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Started server process [2221]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+Starting FastAPI server on port 5001...
+Database table initialization on startup...
+Materials, notifications, and folders table structures verified and migrated.
+INFO:     127.0.0.1:49376 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49376 - "GET /frontend/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49376 - "GET /frontend/app.js HTTP/1.1" 200 OK
+JWT Expired Signature Error: Signature has expired
+INFO:     127.0.0.1:49376 - "GET /api/roles HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:49378 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+JWT Expired Signature Error: Signature has expired
+INFO:     127.0.0.1:49378 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 401 Unauthorized
+JWT Expired Signature Error: Signature has expired
+INFO:     127.0.0.1:49378 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:49381 - "GET / HTTP/1.1" 200 OK
+JWT Expired Signature Error: Signature has expired
+INFO:     127.0.0.1:49381 - "GET /api/roles HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:49381 - "GET / HTTP/1.1" 200 OK
+JWT Expired Signature Error: Signature has expired
+INFO:     127.0.0.1:49381 - "GET /api/roles HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:49381 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+JWT Expired Signature Error: Signature has expired
+INFO:     127.0.0.1:49381 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 401 Unauthorized
+JWT Expired Signature Error: Signature has expired
+INFO:     127.0.0.1:49381 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 401 Unauthorized
+JWT Expired Signature Error: Signature has expired
+INFO:     127.0.0.1:49381 - "GET /api/roles HTTP/1.1" 401 Unauthorized
+JWT Expired Signature Error: Signature has expired
+INFO:     127.0.0.1:49381 - "GET /api/roles HTTP/1.1" 401 Unauthorized
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:242: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)
+INFO:     127.0.0.1:49384 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49384 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49384 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49384 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49420 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49420 - "GET /frontend/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49420 - "GET /frontend/app.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49422 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51247 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51247 - "GET /frontend/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51247 - "GET /frontend/app.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51249 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51249 - "GET /frontend/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51249 - "GET /frontend/app.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52061 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52061 - "GET /frontend/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52063 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52063 - "GET /frontend/app.js HTTP/1.1" 304 Not Modified
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:38: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Started server process [6044]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:251: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)
+Starting FastAPI server on port 5001...
+Database table initialization on startup...
+Materials, notifications, and folders table structures verified and migrated.
+INFO:     127.0.0.1:52169 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52171 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52173 - "POST /api/admin/users HTTP/1.1" 201 Created
+INFO:     127.0.0.1:52175 - "POST /api/admin/users HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:52177 - "POST /api/admin/users HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:52179 - "PUT /api/admin/users/34 HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:52181 - "PUT /api/admin/users/34 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52183 - "PUT /api/admin/users/34 HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:52185 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52187 - "DELETE /api/admin/users/34 HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:52189 - "DELETE /api/admin/users/34 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52191 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52193 - "GET /api/materials?org_id=nexus HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52197 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52199 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52201 - "POST /api/admin/users HTTP/1.1" 201 Created
+INFO:     127.0.0.1:52203 - "POST /api/admin/users HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:52205 - "POST /api/admin/users HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:52207 - "PUT /api/admin/users/35 HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:52209 - "PUT /api/admin/users/35 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52211 - "PUT /api/admin/users/35 HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:52213 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52215 - "DELETE /api/admin/users/35 HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:52217 - "DELETE /api/admin/users/35 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52221 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52223 - "POST /api/materials/6/vote HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52225 - "GET /api/materials?org_id=nexus HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52229 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52231 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52235 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52237 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52239 - "POST /api/admin/users HTTP/1.1" 201 Created
+INFO:     127.0.0.1:52241 - "POST /api/admin/users HTTP/1.1" 201 Created
+INFO:     127.0.0.1:52243 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52245 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52247 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:781: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+INFO:     127.0.0.1:52249 - "POST /api/materials HTTP/1.1" 201 Created
+INFO:     127.0.0.1:52251 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52253 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52255 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52257 - "POST /api/materials/37/vote HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52259 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52261 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52263 - "POST /api/materials/37/vote HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:52265 - "DELETE /api/admin/users/36 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52267 - "DELETE /api/admin/users/37 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52283 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52283 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52283 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52290 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52290 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52290 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52290 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52296 - "GET /uploads/2710e16f7ca55e28.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52290 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52300 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52301 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52334 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52334 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52334 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52334 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52334 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52377 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52382 - "GET /uploads/2710e16f7ca55e28.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52377 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52407 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52408 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52412 - "PUT /api/admin/users/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52412 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52412 - "PUT /api/admin/users/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52412 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52412 - "PUT /api/admin/users/3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52412 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52425 - "GET /api/folders?org_id=Ferty%20Base HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52425 - "GET /api/materials?org_id=Ferty%20Base HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52425 - "GET /api/notifications?org_id=Ferty%20Base HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52425 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52432 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52432 - "GET /uploads/sample.pdf HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52435 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52435 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52435 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52445 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52447 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52451 - "GET /frontend/app.js HTTP/1.1" 200 OK
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:38: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Started server process [6432]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+Starting FastAPI server on port 5001...
+Database table initialization on startup...
+Materials, notifications, and folders table structures verified and migrated.
+INFO:     127.0.0.1:52479 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET /frontend/app.js?v=6cf23180 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET /frontend/app.js?v=008cec03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET /frontend/app.js?v=a103b35b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET /frontend/app.js?v=a4b064c0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET /frontend/app.js?v=22c60c59 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET /frontend/app.js?v=768c274a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET /frontend/app.js?v=97d8ebbe HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52481 - "GET /uploads/2710e16f7ca55e28.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52479 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52481 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52494 - "PUT /api/admin/users/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52494 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52508 - "PUT /api/admin/users/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52508 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52508 - "PUT /api/admin/users/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52508 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52508 - "PUT /api/admin/users/3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52508 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52508 - "PUT /api/admin/users/4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52508 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52518 - "PUT /api/admin/users/5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52518 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52522 - "PUT /api/admin/users/7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52522 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52526 - "PUT /api/admin/users/8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52526 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52540 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52540 - "GET /frontend/app.js?v=d77a3eb8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52540 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52540 - "GET /frontend/app.js?v=042ed5d6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52540 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52540 - "GET /frontend/app.js?v=dda9df49 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52540 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52540 - "GET /frontend/app.js?v=9f21be8b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52540 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52540 - "GET /frontend/app.js?v=b16d0a61 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52540 - "GET /api/roles HTTP/1.1" 200 OK
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:253: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)
+INFO:     127.0.0.1:52552 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52554 - "PUT /api/admin/users/7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52564 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52564 - "GET /frontend/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52564 - "GET /frontend/app.js?v=cc41542a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52566 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52564 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52564 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52564 - "GET /frontend/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52564 - "GET /frontend/app.js?v=1103a2b3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52566 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52564 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52571 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52571 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52575 - "GET /uploads/2710e16f7ca55e28.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52571 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52571 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52575 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52580 - "PUT /api/admin/users/7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52580 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52597 - "PUT /api/admin/users/7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52597 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52601 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52601 - "GET /frontend/app.js?v=7d08ada2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52601 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52601 - "GET /frontend/app.js?v=7d557b56 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52601 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52615 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52615 - "GET /frontend/app.js?v=777cd6b9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52617 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52615 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52615 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52615 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52615 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+Developer Mock Google login for: navya@example.com
+INFO:     127.0.0.1:52625 - "POST /api/auth/google HTTP/1.1" 403 Forbidden
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:338: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)
+Developer Mock Google login for: navya@gmail.com
+INFO:     127.0.0.1:52629 - "POST /api/auth/google HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52629 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52629 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52629 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:783: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+INFO:     127.0.0.1:52636 - "POST /api/materials HTTP/1.1" 201 Created
+INFO:     127.0.0.1:52636 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52636 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52636 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52636 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52642 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52642 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52642 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52642 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52650 - "GET /uploads/2710e16f7ca55e28.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52648 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52642 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52653 - "POST /api/materials/38/vote HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52653 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52653 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52653 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52653 - "POST /api/materials/38/vote HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52653 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52653 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52653 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+Developer Mock Google login for: navya@gmail.com
+INFO:     127.0.0.1:52670 - "POST /api/auth/google HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52673 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52673 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52673 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52680 - "POST /api/notifications/read HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52683 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52683 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52722 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52722 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52726 - "GET /uploads/2710e16f7ca55e28.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52722 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52722 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52730 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52730 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52730 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52730 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52730 - "POST /api/notifications/read HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52737 - "POST /api/materials/38/vote HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52737 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52737 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52737 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52743 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52761 - "GET /uploads/2710e16f7ca55e28.png HTTP/1.1" 304 Not Modified
+Developer Mock Google login for: navya@gmail.com
+INFO:     127.0.0.1:52771 - "POST /api/auth/google HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52771 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52771 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52771 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52799 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52799 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52803 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52803 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52803 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52808 - "POST /api/folders/delete HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52808 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52808 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52808 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52814 - "POST /api/folders/delete HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52814 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52814 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52814 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52824 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52825 - "GET /uploads/2710e16f7ca55e28.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52820 - "POST /api/folders/delete HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52820 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52820 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52820 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52820 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52820 - "GET /frontend/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52820 - "GET /frontend/app.js?v=74d3f936 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52820 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52820 - "GET /frontend/app.js?v=739fcd25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52820 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52820 - "GET /frontend/app.js?v=b164137d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52820 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52820 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52820 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52820 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+Developer Mock Google login for: navya@gmail.com
+INFO:     127.0.0.1:52830 - "POST /api/auth/google HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52830 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52830 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52830 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52830 - "POST /api/notifications/read HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52842 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52842 - "GET /frontend/app.js?v=34f29f51 HTTP/1.1" 200 OK
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:38: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Started server process [6885]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+Starting FastAPI server on port 5001...
+Database table initialization on startup...
+Materials, notifications, and folders table structures verified and migrated.
+INFO:     127.0.0.1:52897 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52897 - "GET /frontend/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52897 - "GET /frontend/app.js?v=f37c8ac9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52897 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52913 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+JWT Expired Signature Error: Signature has expired
+INFO:     127.0.0.1:52913 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 401 Unauthorized
+JWT Expired Signature Error: Signature has expired
+INFO:     127.0.0.1:52913 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 401 Unauthorized
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:338: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)
+Developer Mock Google login for: admin@example.com
+INFO:     127.0.0.1:52925 - "POST /api/auth/google HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52925 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52931 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52931 - "GET /frontend/app.js?v=bc269fb7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52931 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52955 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52955 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52961 - "GET /uploads/2710e16f7ca55e28.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52960 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52955 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52965 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52966 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52971 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52971 - "GET /frontend/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52971 - "GET /frontend/app.js?v=e300c0d9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52973 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52971 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52975 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52975 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52975 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52985 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52985 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52985 - "GET /frontend/app.js?v=633f4f56 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52985 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52986 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52988 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52988 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52988 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:253: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)
+INFO:     127.0.0.1:52995 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52995 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52998 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52998 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52998 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52998 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52998 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52998 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52998 - "GET /frontend/app.js?v=dcaf7049 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53006 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52998 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52998 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52998 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52998 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53015 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53023 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53030 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53055 - "POST /api/auth/login HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:53058 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53058 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53066 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53066 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53066 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53071 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53082 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53082 - "GET /frontend/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53082 - "GET /frontend/app.js?v=d3f89237 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53082 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53082 - "GET /frontend/app.js?v=5bd9af48 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53082 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53082 - "GET /frontend/app.js?v=a7c72cf9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53082 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53084 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53084 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53082 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53089 - "GET /uploads/2710e16f7ca55e28.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53084 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53092 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53096 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53111 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53111 - "GET /frontend/app.js?v=0d1628c6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53111 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53111 - "GET /frontend/app.js?v=5ee84516 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53112 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53111 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53111 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53111 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53111 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53129 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53133 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53133 - "GET /frontend/app.js?v=03dedcfa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53134 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53133 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53133 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53133 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53148 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53148 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53151 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53151 - "GET /frontend/app.js?v=4c830149 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53152 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53151 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53151 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53151 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53160 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53160 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53173 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53173 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53183 - "GET /uploads/2710e16f7ca55e28.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53192 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53192 - "GET /frontend/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53192 - "GET /frontend/app.js?v=1992db4b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53192 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53192 - "GET /frontend/app.js?v=32ed36d5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53192 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53192 - "GET /frontend/app.js?v=dd102a60 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53193 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53192 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53192 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53192 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53199 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53199 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53201 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53227 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53227 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53234 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53345 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53345 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53350 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53345 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53555 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53555 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53561 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53561 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53565 - "GET /uploads/2710e16f7ca55e28.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53561 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53565 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53561 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53561 - "PUT /api/admin/users/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53561 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53574 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53572 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53572 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53578 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53578 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53578 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53578 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53578 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53585 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53638 - "POST /api/notifications/read HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53711 - "GET /uploads/2710e16f7ca55e28.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53709 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53756 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53756 - "GET /frontend/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53756 - "GET /frontend/app.js?v=e9037c67 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53758 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53756 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53756 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53758 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53756 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53787 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53787 - "GET /frontend/app.js?v=e497f85a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53789 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53787 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53787 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53787 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53787 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53787 - "GET /frontend/app.js?v=6f1c2367 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53787 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53787 - "GET /frontend/app.js?v=dfd36942 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53789 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53787 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53787 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53787 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53799 - "GET /uploads/sample.pdf HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53816 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53816 - "GET /frontend/app.js?v=6e669cd5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53816 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53818 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53818 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53818 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53832 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53832 - "GET /frontend/app.js?v=8c19f5cc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53832 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53832 - "GET /frontend/app.js?v=86f891b9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53832 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53832 - "GET /frontend/app.js?v=a32e08ba HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53834 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53832 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53832 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53832 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53847 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53850 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53850 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53854 - "GET /uploads/2710e16f7ca55e28.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53854 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53854 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53854 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53859 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53863 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53864 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54020 - "GET /uploads/2710e16f7ca55e28.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54018 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54016 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54048 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54048 - "GET /frontend/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54048 - "GET /frontend/app.js?v=04b07627 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54050 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54048 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54048 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54048 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54070 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54070 - "GET /frontend/app.js?v=944b874a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54070 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54070 - "GET /frontend/app.js?v=b22616d2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54070 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54071 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54071 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54071 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54078 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54091 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54091 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54091 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54091 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54091 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54346 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54346 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54350 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54350 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54354 - "GET /uploads/2710e16f7ca55e28.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54350 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54357 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54361 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54364 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54373 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54373 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54377 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54381 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54381 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54385 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54385 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54385 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54385 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54399 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54400 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54404 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54404 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54408 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54408 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54408 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54408 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54414 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54417 - "POST /api/notifications/read HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54429 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     49.37.152.9:0 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     49.37.152.9:0 - "GET / HTTP/1.1" 200 OK
+INFO:     49.37.152.9:0 - "GET /frontend/style.css HTTP/1.1" 200 OK
+INFO:     49.37.152.9:0 - "GET /frontend/app.js?v=2dce11d3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54565 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     49.37.152.9:0 - "GET / HTTP/1.1" 200 OK
+INFO:     49.37.152.9:0 - "GET / HTTP/1.1" 200 OK
+INFO:     49.37.152.9:0 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54682 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54682 - "GET /frontend/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54682 - "GET /frontend/app.js?v=7429bd48 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54682 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54682 - "GET /frontend/app.js?v=a8802cae HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54682 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54683 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54683 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54683 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54706 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54706 - "GET /frontend/app.js?v=546a6a0e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54706 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54706 - "GET /frontend/app.js?v=58b4a6fc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54706 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54706 - "GET /frontend/app.js?v=08ebbc59 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54707 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54706 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54706 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54706 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     2405:201:c03d:f218:608f:e630:9868:38a5:0 - "GET / HTTP/1.1" 200 OK
+INFO:     2405:201:c03d:f218:608f:e630:9868:38a5:0 - "GET /frontend/style.css HTTP/1.1" 200 OK
+INFO:     2405:201:c03d:f218:608f:e630:9868:38a5:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     2405:201:c03d:f218:608f:e630:9868:38a5:0 - "GET /frontend/app.js?v=0751ec9f HTTP/1.1" 200 OK
+INFO:     2405:201:c03d:f218:608f:e630:9868:38a5:0 - "GET / HTTP/1.1" 200 OK
+INFO:     2405:201:c03d:f218:608f:e630:9868:38a5:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     2409:40f0:542c:3a9d:5d40:c2cb:c16:70c8:0 - "GET / HTTP/1.1" 200 OK
+INFO:     2409:40f0:542c:3a9d:5d40:c2cb:c16:70c8:0 - "GET /frontend/style.css HTTP/1.1" 200 OK
+INFO:     2409:40f0:542c:3a9d:5d40:c2cb:c16:70c8:0 - "GET /frontend/app.js?v=67f29cde HTTP/1.1" 200 OK
+INFO:     2409:40f0:542c:3a9d:5d40:c2cb:c16:70c8:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     2409:40f0:542c:3a9d:5d40:c2cb:c16:70c8:0 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     2409:40f0:542c:3a9d:5d40:c2cb:c16:70c8:0 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     2405:201:c03d:f218:c5ae:9e7c:3ca0:2a1:0 - "GET / HTTP/1.1" 200 OK
+INFO:     2405:201:c03d:f218:c5ae:9e7c:3ca0:2a1:0 - "GET /frontend/style.css HTTP/1.1" 304 Not Modified
+INFO:     2405:201:c03d:f218:c5ae:9e7c:3ca0:2a1:0 - "GET /frontend/app.js?v=eb3ee4a0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57649 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57649 - "GET /frontend/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57649 - "GET /frontend/app.js?v=c02e6565 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57650 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57649 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57649 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57650 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57655 - "GET /uploads/2710e16f7ca55e28.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57649 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57867 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57867 - "GET /frontend/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57867 - "GET /frontend/app.js?v=2675a0a8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57869 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57867 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     2405:201:c016:205:5501:60af:4e13:a43a:0 - "GET / HTTP/1.1" 200 OK
+INFO:     2405:201:c016:205:5501:60af:4e13:a43a:0 - "GET /frontend/style.css HTTP/1.1" 200 OK
+INFO:     2405:201:c016:205:5501:60af:4e13:a43a:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     2405:201:c016:205:5501:60af:4e13:a43a:0 - "GET /frontend/app.js?v=845f0525 HTTP/1.1" 200 OK
+INFO:     2405:201:c016:205:5501:60af:4e13:a43a:0 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     2405:201:c016:205:5501:60af:4e13:a43a:0 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     2405:201:c016:205:5501:60af:4e13:a43a:0 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     2405:201:c016:205:5501:60af:4e13:a43a:0 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     2405:201:c016:205:5501:60af:4e13:a43a:0 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     2405:201:c016:205:5501:60af:4e13:a43a:0 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 200 OK
+INFO:     2405:201:c016:205:5501:60af:4e13:a43a:0 - "GET /uploads/2710e16f7ca55e28.png HTTP/1.1" 200 OK
+INFO:     2405:201:c016:205:5501:60af:4e13:a43a:0 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     2405:201:c016:205:5501:60af:4e13:a43a:0 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57919 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57919 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57925 - "GET /uploads/fc65d8e55503653f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57926 - "GET /uploads/2710e16f7ca55e28.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57919 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57928 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57928 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57930 - "GET /api/users HTTP/1.1" 401 Unauthorized
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:253: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)
+INFO:     127.0.0.1:57944 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57947 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57952 - "GET /api/users HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:57978 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57978 - "GET /frontend/app.js?v=358bae82 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57980 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57978 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57978 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57978 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57998 - "GET /uploads/sample.pdf HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:58002 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58002 - "GET /api/roles HTTP/1.1" 200 OK
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:38: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Started server process [13776]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+Starting FastAPI server on port 5001...
+Database table initialization on startup...
+Materials, notifications, and folders table structures verified and migrated.
+INFO:     127.0.0.1:58024 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58024 - "GET /frontend/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58024 - "GET /frontend/app.js?v=004a3c0b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58056 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:253: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)
+INFO:     127.0.0.1:58142 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58142 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58258 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58258 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58258 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:783: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+INFO:     127.0.0.1:58339 - "POST /api/materials HTTP/1.1" 201 Created
+INFO:     127.0.0.1:58339 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58339 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58339 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58349 - "GET /uploads/4e3af3a44b494f73.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58339 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59199 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59199 - "GET /frontend/app.js?v=dd4d01b7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59209 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59205 - "GET /api/roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59199 - "GET /api/folders?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59199 - "GET /api/materials?org_id=Bio%20Factor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59205 - "GET /uploads/4e3af3a44b494f73.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59199 - "GET /api/notifications?org_id=Bio%20Factor HTTP/1.1" 200 OK
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:52: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Started server process [14172]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+/Users/a9553370471/Desktop/CEREVYN-1/backend/server.py:53: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Started server process [14308]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+Starting FastAPI server on port 5001...
+Database table initialization on startup...
+Materials, notifications, and folders table structures verified and migrated.
+INFO:     127.0.0.1:59352 - "GET / HTTP/1.1" 200 OK

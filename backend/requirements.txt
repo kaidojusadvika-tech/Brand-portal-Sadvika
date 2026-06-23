@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+psycopg2-binary
+PyJWT
+werkzeug
+requests
+google-auth
+azure-storage-blob
+python-multipart
